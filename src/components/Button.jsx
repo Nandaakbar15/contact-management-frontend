@@ -24,6 +24,10 @@ export function BtnChange() {
     );
 }
 
-export function BtnDelete() {
-
+export function BtnDelete({onClick}) {
+    return (
+        <div className="button-delete">
+            <button type="submit" className="btn btn-danger" onClick={onClick}>Hapus!</button>
+        </div>
+    );
 }
